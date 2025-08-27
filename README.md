@@ -43,14 +43,14 @@ A full-stack, real-time hotel booking web application built using the MERN (Mong
 
 2. **Backend Setup**
    ```bash
-   cd backend
+   cd api
    npm install
    npm run dev
    ```
 
 3. **Frontend Setup**
    ```bash
-   cd frontend
+   cd client
    npm install
    npm start
    ```
@@ -64,11 +64,11 @@ A full-stack, real-time hotel booking web application built using the MERN (Mong
 ```
 REAL-TIME-HOTEL-BOOKING-WEB-APPLICATION-MERN/
 │
-├── backend/        # Express API, Models, Routes, Controllers
+├── api/        # Express API, Models, Routes, Controllers
 │
-├── frontend/       # React app, Components, Redux
+├── client/       # React app, Components, Redux
 │
-├── admin-portal/   # Admin portal source code (if separated)
+├── admin/   # Admin portal source code (if separated)
 │
 └── README.md
 ```
