@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Container */
+.construction-container {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Navigation Bar */
+  header nav {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #00f2fe;
+  }
+  
+  /* Content Section */
+  .construction-content {
+    margin: 30px auto;
+    color: #007bff;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px 20px;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .construction-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff;
+    animation: slideIn 1s ease-in-out;
+  }
+  h3 {
+    color: #4facfe;
+  }
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: rgb(31, 82, 133)
+  }
+  
+  /* Countdown Section */
+  .countdown h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  #timer {
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #timer span {
+    color: #4facfe;
+  }
+  
+  /* Contact Info */
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #4facfe;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .construction-content {
+      padding: 20px 15px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+    
+  
+    p {
+      font-size: 1em;
+    }
+  
+    .navbar a {
+      font-size: 16px;
+    }
+  
+    #timer {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  }

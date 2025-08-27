@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 768px) {
+  .animated-text {
+    width: 50%;  /* Adjust width for smaller screens */
+    animation: typing 3s steps(20, end) infinite, blinkCursor 500ms step-end infinite;
+  }
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lContainer p{
+  color:#080808;
+}
+.login-container .lContainer {
+  width: 100%;  /* Set width to 100% for responsiveness */
+  margin: 0 auto;  /* Center the container horizontally */
+}
+/* Typing Animation */
+.animated-text {
+  display:inline-flexbox ;
+  overflow: hidden;
+   padding: 20px;
+  white-space: nowrap; /* Prevents text wrapping */
+  width: 100%;
+  animation: typing 5s steps(30, end) infinite, blinkCursor 500ms step-end infinite;
+  font-family: monospace;
+  font-size: 24px;
+  color: rgb(245, 169, 7);
+}
+
+.text-1, .text-2, .text-3, .text-4 {
+  display: none; /* Hidden initially */
+  animation: typing 3s steps(30, end) forwards, blink 1s step-end infinite;
+}
+
+.text-1 {
+  animation-delay: 0s; /* First text appears immediately */
+  display: inline-block;
+}
+
+.text-2 {
+  animation-delay: 3.5s; /* Second text appears after 3.5 seconds */
+  display: inline-block;
+}
+
+.text-3 {
+  animation-delay: 7s; /* Third text appears after 7 seconds */
+  display: inline-block;
+}
+
+.text-4 {
+  animation-delay: 10.5s; /* Fourth text appears after 10.5 seconds */
+  display: inline-block;
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+/* Welcome Header */
+.welcome {
+  font-size: 50px;
+  font-weight: bold;
+  color: #080808;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* Login Container Styles */
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://digital.ihg.com/is/image/ihg/ihgor-member-rate-web-offers-1440x720');
+  background-size: cover;
+}
+
+.login-container .lContainer {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field Styles */
+.login-container .lInput {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container .lInput:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.login-container .lButton {
+  width: 45%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container .lButton:hover {
+  background-color: #3e8e41;
+}
+
+.login-container .lButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error Message Styles */
+.login-container .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

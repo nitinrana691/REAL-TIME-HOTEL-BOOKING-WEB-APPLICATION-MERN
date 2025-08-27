@@ -1,0 +1,111 @@
+/* Navbar container */
+.navbar {
+  height: 60px; /* Slightly increase height for better visual balance */
+  background-color: #2e1919;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth transition effect for background */
+}
+
+/* Inner container */
+.navContainer {
+  width: 100%;
+  max-width: 1200px; /* Slightly wider max width */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Add some padding for spacing */
+}
+
+/* Logo styling */
+.logo {
+  font-weight: 600; /* Increase font-weight for stronger presence */
+  font-size: 1.5rem; /* Increase font size */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for logo */
+.logo:hover {
+  color: #c95e18; /* Change color to a bright accent on hover */
+}
+
+/* Button styling */
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 8px 15px; /* Increase padding for more prominent buttons */
+  cursor: pointer;
+  background-color: #3498db; /* Eye-catching color for buttons */
+  color:white;
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for buttons */
+.navButton:hover {
+  background-color: #e92949; /* Change color on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Navbar items container */
+.navItems {
+  display: flex;
+  align-items: center;
+}
+.userWelcome {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  padding: 5px 10px;
+  background-color: #ecf0f1;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* User icon style */
+.userWelcome i {
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+/* Hover effect for the Welcome span */
+.userWelcome:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .userWelcome {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .userWelcome {
+    font-size: 0.9rem;
+    padding: 3px 6px;
+  }
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navContainer {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .logo {
+    font-size: 1.2rem; /* Smaller logo font size on mobile */
+  }
+
+  .navButton {
+    padding: 6px 12px; /* Adjust button size for mobile */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+}

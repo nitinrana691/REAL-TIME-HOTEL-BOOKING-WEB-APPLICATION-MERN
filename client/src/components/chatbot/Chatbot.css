@@ -1,0 +1,96 @@
+/* src/components/Chatbot.css */
+
+/* Floating Chatbot Button */
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .chatbot-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Chatbot Window */
+  .chatbot-window {
+    position: fixed;
+    bottom: 90px; /* Positioned above the chatbot button */
+    right: 20px;
+    width: 350px;
+    height: 430px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: slide-up 0.3s ease-out;
+  }
+  
+  /* Chatbot Header */
+  .chatbot-header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatbot-header h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Animation */
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .chatbot-window {
+      width: 90%;
+      height: 80%;
+      bottom: 100px;
+      right: 5%;
+      border-radius: 10px;
+    }
+  
+    .chatbot-button {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

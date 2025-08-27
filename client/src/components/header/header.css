@@ -1,0 +1,284 @@
+/* General styles for the header */
+.header {
+  background-image: url('https://png.pngtree.com/background/20230616/original/pngtree-sleek-and-sophisticated-3d-render-of-a-contemporary-hotel-reception-and-picture-image_3666309.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0 0;
+}
+
+.headerList {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.headerListItem.active,
+.headerListItem:hover {
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.headerTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.headerDesc {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  line-height: 1.5;
+  color: white;
+}
+
+.headerBtn {
+  background-color: #0071c2; /* Main button color */
+  color: white; /* Text color */
+  font-weight: 500;
+  border: none;
+  padding: 12px 20px; /* Padding for regular screens */
+  cursor: pointer;
+  border-radius: 8px; /* Smoother corner radius */
+  font-size: 1rem;
+  margin:80px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.headerBtn:hover {
+  background-color: #005a99; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.headerBtn:active {
+  background-color: #003d66; /* Even darker shade on click */
+  transform: scale(0.98); /* Slight compression effect when clicked */
+}
+
+.headerBtn:focus {
+  outline: 2px solid #febb02; /* Visible outline for accessibility */
+  outline-offset: 3px; /* Spacing between button and outline */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .headerBtn {
+    padding: 10px 16px; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+.headerBtn1 {
+  background-color: #0071c2; /* Main button color */
+  color: white; /* Text color */
+  font-weight: 500;
+  border: none;
+  padding: 12px 20px; /* Padding for regular screens */
+  cursor: pointer;
+  border-radius: 8px; /* Smoother corner radius */
+  font-size: 1rem;
+  margin-left: 80px;
+  
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.headerBtn1:hover {
+  background-color: #005a99; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Search bar styling */
+.headerSearch {
+  height: 50px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -25px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 200px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headerIcon {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  flex: 1;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.headerSearchText {
+  color: gray;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+}
+
+/* Options dropdown styling */
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.optionItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.optionCounterButton:hover {
+  background-color: #0071c2;
+  color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+  background-color: lightgray;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 250px;
+  }
+
+  .headerContainer {
+    
+    padding: 10px;
+  }
+
+  .headerTitle {
+    font-size: 1.5rem;
+  }
+
+  .headerDesc {
+    font-size: 1rem;
+  }
+
+  .headerSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes items to opposite sides */
+    width: 100%;
+    padding: 10px; /* Add padding if necessary */
+    background-color: white; /* Adjust the background color if needed */
+    border-radius: 10px;
+  }
+  
+  .headerSearchItem {
+    flex: 1; /* Ensure all search items take up available space */
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #e0e0e0; /* Optional border styling */
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .headerBtnContainer {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+  }
+  
+  .headerBtn {
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-left: 20px; /* Adds space between button and previous element */
+  }
+  
+  .optionItem {
+    font-size: 0.85rem;
+  }
+
+  .optionCounterButton {
+    width: 25px;
+    height: 25px;
+  }
+}

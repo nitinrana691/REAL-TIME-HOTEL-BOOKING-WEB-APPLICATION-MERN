@@ -1,0 +1,160 @@
+/* General body styling for register page */
+.register {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://digital.ihg.com/is/image/ihg/ihgor-member-rate-web-offers-1440x720');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+   
+}
+/* Register container styling */
+
+
+.register .registerContainer {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 40px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Updated for better space allocation */
+    width: 100%;
+    text-align: center;
+}
+
+/* Form header specific to register page */
+.register h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Label styling for register page */
+.register label {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(230, 216, 216);
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Input styling for register page */
+.register form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for input fields */
+    gap: 10px; /* Better spacing */
+    align-items: center;
+    padding-right:60px;
+}
+
+/* Styling for full-width fields like email or password */
+/*.register form .full-width {
+    grid-column: span 2; /* Make input field span across both columns */
+/* }
+*/
+
+.register input {
+    width: 100%;
+    padding: 10px; /* Increased padding for better UX */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Placeholder styling */
+.register input::placeholder {
+    color: #aaa; /* Lighter color for placeholder */
+    font-style: italic; /* Slightly different style for placeholders */
+}
+
+.register input:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+}
+
+/* Button styling for register page */
+.register button {
+    background-color: #2980b9;
+    color: white;
+    margin-top: 5px;
+    margin-left: 90px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    grid-column: span 2; /* Span the button across two columns */
+}
+
+.register button:hover {
+    background-color: #1c6ea4;
+    transform: translateY(-2px);
+}
+
+/* Error message for register page */
+.register div[style] {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+/* Link styling for register page */
+.register p {
+    margin-top: 15px;
+    font-size: 14px;
+    grid-column: span 2; /* Span the paragraph across two columns */
+}
+
+.register p a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .register .registerContainer {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+
+    .register form {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .register h2 {
+        font-size: 22px;
+    }
+
+    .register input,
+    .register button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .register .registerContainer {
+        padding: 25px 15px;
+    }
+
+    .register h2 {
+        font-size: 20px;
+    }
+
+    .register input {
+        padding: 8px;
+    }
+
+    .register button {
+        padding: 10px 16px;
+    }
+}
